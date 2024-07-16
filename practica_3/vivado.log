@@ -1,0 +1,183 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Oct 24 20:19:55 2021
+# Process ID: 15720
+# Current directory: I:/mis cosas/Pogramas/practica_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1216 I:\mis cosas\Pogramas\practica_3\practica_3.xpr
+# Log file: I:/mis cosas/Pogramas/practica_3/vivado.log
+# Journal file: I:/mis cosas/Pogramas/practica_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {I:/mis cosas/Pogramas/practica_3/practica_3.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/Pogramas/practica_3' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 709.188 ; gain = 77.137
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7k70tfbv676-1
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'sys_clk_pin' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:10]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:12]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{X[0]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:12]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:13]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{X[0]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:13]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:15]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{X[1]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:15]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:16]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{X[1]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:16]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:18]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{X[2]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:18]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:19]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{X[2]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:19]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:21]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{X[3]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:21]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:22]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{X[3]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:22]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:24]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{Y[0]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:24]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:25]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{Y[0]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:25]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:27]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{Y[1]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:27]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:28]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{Y[1]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:28]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:30]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{Y[2]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:30]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:31]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{Y[2]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:31]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:33]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{Y[3]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:33]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:34]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{Y[3]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:34]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:36]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{Z[0]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:36]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:37]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{Z[0]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:37]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:39]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{Z[1]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:39]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:40]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{Z[1]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:40]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:42]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{Z[2]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:42]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:43]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{Z[2]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:43]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:45]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{Z[3]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:45]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:46]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{Z[3]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:46]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:48]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{Z[4]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:48]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:49]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{Z[4]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:49]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:51]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{Z[5]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:51]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:52]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{Z[5]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:52]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:54]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{Z[6]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:54]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:55]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{Z[6]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:55]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:57]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{Z[7]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:57]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_clocks{sys_clk_pin}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:58]
+CRITICAL WARNING: [Designutils 20-1307] Command 'get_ports{Z[7]}' is not supported in the xdc constraint file. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:58]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V17' is not a valid site or package pin name. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:60]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V16' is not a valid site or package pin name. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:62]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W16' is not a valid site or package pin name. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:64]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W17' is not a valid site or package pin name. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:66]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W15' is not a valid site or package pin name. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:68]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V15' is not a valid site or package pin name. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:70]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W14' is not a valid site or package pin name. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:72]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W13' is not a valid site or package pin name. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:74]
+CRITICAL WARNING: [Common 17-69] Command failed: 'E19' is not a valid site or package pin name. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:97]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V19' is not a valid site or package pin name. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:101]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W18' is not a valid site or package pin name. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:103]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U15' is not a valid site or package pin name. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:105]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U14' is not a valid site or package pin name. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:107]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V14' is not a valid site or package pin name. [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc:109]
+Finished Parsing XDC File [I:/mis cosas/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1098.242 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:23 ; elapsed = 00:00:13 . Memory (MB): peak = 1215.309 ; gain = 420.062
+close_design
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'I:/mis cosas/Pogramas/practica_3/practica_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_mult8' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'I:/mis cosas/Pogramas/practica_3/practica_3.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_mult8_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "I:/mis cosas/Pogramas/practica_3/practica_3.srcs/sources_1/new/Multiplicador.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mult8b'
+INFO: [VRFC 10-163] Analyzing VHDL file "I:/mis cosas/Pogramas/practica_3/practica_3.srcs/sim_1/new/multiplicador_sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_mult8'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'I:/mis cosas/Pogramas/practica_3/practica_3.sim/sim_1/behav/xsim'
+"xelab -wto 6f2661714ab54219af855ccc11b6de37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_mult8_behav xil_defaultlib.tb_mult8 -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6f2661714ab54219af855ccc11b6de37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_mult8_behav xil_defaultlib.tb_mult8 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture rtl of entity xil_defaultlib.mult8b [mult8b_default]
+Compiling architecture beh of entity xil_defaultlib.tb_mult8
+Built simulation snapshot tb_mult8_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source I:/mis -notrace
+couldn't read file "I:/mis": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct 24 20:26:12 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'I:/mis cosas/Pogramas/practica_3/practica_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_mult8_behav -key {Behavioral:sim_1:Functional:tb_mult8} -tclbatch {tb_mult8.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_mult8.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mult8_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1733.539 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 24 20:29:20 2021...

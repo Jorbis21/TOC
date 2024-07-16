@@ -1,0 +1,425 @@
+
+*** Running vivado
+    with args -log sintesis_tragaperras.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source sintesis_tragaperras.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source sintesis_tragaperras.tcl -notrace
+Command: synth_design -top sintesis_tragaperras -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14276 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 710.910 ; gain = 178.578
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [D:/Pogramas/practica5/practica5.srcs/sources_1/new/contador10.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'sintesis_tragaperras' [D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/sintesis_tragaperras.vhd:20]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/debouncer.vhd:5' bound to instance 'debouncer_inicio' of component 'debouncer' [D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/sintesis_tragaperras.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/debouncer.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (1#1) [D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/debouncer.vhd:16]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/debouncer.vhd:5' bound to instance 'debouncer_fin' of component 'debouncer' [D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/sintesis_tragaperras.vhd:77]
+INFO: [Synth 8-3491] module 'tragaperras' declared at 'D:/Pogramas/practica5/practica5.srcs/sources_1/new/tragaperras.vhd:5' bound to instance 'tragaperras_uc' of component 'tragaperras' [D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/sintesis_tragaperras.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'tragaperras' [D:/Pogramas/practica5/practica5.srcs/sources_1/new/tragaperras.vhd:20]
+INFO: [Synth 8-3491] module 'multiplex' declared at 'D:/Pogramas/practica5/practica5.srcs/sources_1/new/multiplexor.vhd:4' bound to instance 'mux' of component 'multiplex' [D:/Pogramas/practica5/practica5.srcs/sources_1/new/tragaperras.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'multiplex' [D:/Pogramas/practica5/practica5.srcs/sources_1/new/multiplexor.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'multiplex' (2#1) [D:/Pogramas/practica5/practica5.srcs/sources_1/new/multiplexor.vhd:12]
+INFO: [Synth 8-3491] module 'divisor' declared at 'D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/divisor.vhd:17' bound to instance 'divider' of component 'divisor' [D:/Pogramas/practica5/practica5.srcs/sources_1/new/tragaperras.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'divisor' [D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/divisor.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'divisor' (3#1) [D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/divisor.vhd:28]
+INFO: [Synth 8-3491] module 'contador' declared at 'D:/Pogramas/practica5/practica5.srcs/sources_1/new/contador10.vhd:5' bound to instance 'contador1' of component 'contador' [D:/Pogramas/practica5/practica5.srcs/sources_1/new/tragaperras.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'contador' [D:/Pogramas/practica5/practica5.srcs/sources_1/new/contador10.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'contador' (4#1) [D:/Pogramas/practica5/practica5.srcs/sources_1/new/contador10.vhd:14]
+INFO: [Synth 8-3491] module 'contador' declared at 'D:/Pogramas/practica5/practica5.srcs/sources_1/new/contador10.vhd:5' bound to instance 'contador2' of component 'contador' [D:/Pogramas/practica5/practica5.srcs/sources_1/new/tragaperras.vhd:111]
+INFO: [Synth 8-3491] module 'memoria_bram' declared at 'D:/Pogramas/practica5/practica5.runs/synth_1/.Xil/Vivado-8532-DESKTOP-UDMFM76/realtime/memoria_bram_stub.vhdl:5' bound to instance 'mem1' of component 'memoria_bram' [D:/Pogramas/practica5/practica5.srcs/sources_1/new/tragaperras.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'memoria_bram' [D:/Pogramas/practica5/practica5.runs/synth_1/.Xil/Vivado-8532-DESKTOP-UDMFM76/realtime/memoria_bram_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'contador' declared at 'D:/Pogramas/practica5/practica5.srcs/sources_1/new/contador10.vhd:5' bound to instance 'contador3' of component 'contador' [D:/Pogramas/practica5/practica5.srcs/sources_1/new/tragaperras.vhd:125]
+INFO: [Synth 8-3491] module 'memoria_bram' declared at 'D:/Pogramas/practica5/practica5.runs/synth_1/.Xil/Vivado-8532-DESKTOP-UDMFM76/realtime/memoria_bram_stub.vhdl:5' bound to instance 'mem2' of component 'memoria_bram' [D:/Pogramas/practica5/practica5.srcs/sources_1/new/tragaperras.vhd:130]
+WARNING: [Synth 8-614] signal 'douta1' is read in the process but is not in the sensitivity list [D:/Pogramas/practica5/practica5.srcs/sources_1/new/tragaperras.vhd:176]
+WARNING: [Synth 8-614] signal 'douta2' is read in the process but is not in the sensitivity list [D:/Pogramas/practica5/practica5.srcs/sources_1/new/tragaperras.vhd:176]
+WARNING: [Synth 8-614] signal 'wea_bram' is read in the process but is not in the sensitivity list [D:/Pogramas/practica5/practica5.srcs/sources_1/new/tragaperras.vhd:176]
+WARNING: [Synth 8-614] signal 'Cont0_s' is read in the process but is not in the sensitivity list [D:/Pogramas/practica5/practica5.srcs/sources_1/new/tragaperras.vhd:176]
+WARNING: [Synth 8-614] signal 'salida' is read in the process but is not in the sensitivity list [D:/Pogramas/practica5/practica5.srcs/sources_1/new/tragaperras.vhd:176]
+WARNING: [Synth 8-3848] Net douta1 in module/entity tragaperras does not have driver. [D:/Pogramas/practica5/practica5.srcs/sources_1/new/tragaperras.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'tragaperras' (5#1) [D:/Pogramas/practica5/practica5.srcs/sources_1/new/tragaperras.vhd:20]
+INFO: [Synth 8-3491] module 'displays' declared at 'D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/displays.vhd:7' bound to instance 'displays_inst' of component 'displays' [D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/sintesis_tragaperras.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'displays' [D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/displays.vhd:20]
+INFO: [Synth 8-3491] module 'conv_7seg' declared at 'D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/conv_7seg.vhd:32' bound to instance 'conv_7seg_digito_0' of component 'conv_7seg' [D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/displays.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'conv_7seg' [D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/conv_7seg.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'conv_7seg' (6#1) [D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/conv_7seg.vhd:37]
+INFO: [Synth 8-3491] module 'conv_7seg' declared at 'D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/conv_7seg.vhd:32' bound to instance 'conv_7seg_digito_1' of component 'conv_7seg' [D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/displays.vhd:37]
+INFO: [Synth 8-3491] module 'conv_7seg' declared at 'D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/conv_7seg.vhd:32' bound to instance 'conv_7seg_digito_2' of component 'conv_7seg' [D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/displays.vhd:38]
+INFO: [Synth 8-3491] module 'conv_7seg' declared at 'D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/conv_7seg.vhd:32' bound to instance 'conv_7seg_digito_3' of component 'conv_7seg' [D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/displays.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'displays' (7#1) [D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/displays.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'sintesis_tragaperras' (8#1) [D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/sintesis_tragaperras.vhd:20]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 774.328 ; gain = 241.996
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 775.594 ; gain = 243.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 775.594 ; gain = 243.262
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Pogramas/practica5/practica5.srcs/sources_1/ip/memoria_bram/memoria_bram/memoria_bram_in_context.xdc] for cell 'tragaperras_uc/mem1'
+Finished Parsing XDC File [d:/Pogramas/practica5/practica5.srcs/sources_1/ip/memoria_bram/memoria_bram/memoria_bram_in_context.xdc] for cell 'tragaperras_uc/mem1'
+Parsing XDC File [d:/Pogramas/practica5/practica5.srcs/sources_1/ip/memoria_bram/memoria_bram/memoria_bram_in_context.xdc] for cell 'tragaperras_uc/mem2'
+Finished Parsing XDC File [d:/Pogramas/practica5/practica5.srcs/sources_1/ip/memoria_bram/memoria_bram/memoria_bram_in_context.xdc] for cell 'tragaperras_uc/mem2'
+Parsing XDC File [D:/Pogramas/practica5/practica5.srcs/constrs_1/imports/recursos/Basys3_Master.xdc]
+Finished Parsing XDC File [D:/Pogramas/practica5/practica5.srcs/constrs_1/imports/recursos/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Pogramas/practica5/practica5.srcs/constrs_1/imports/recursos/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sintesis_tragaperras_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/sintesis_tragaperras_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 901.641 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 901.641 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 901.641 ; gain = 369.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 901.641 ; gain = 369.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for tragaperras_uc/mem1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for tragaperras_uc/mem2. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 901.641 ; gain = 369.309
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'debouncer'
+INFO: [Synth 8-802] inferred FSM for state register 'ESTADO_reg' in module 'tragaperras'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         waitingpression |                               00 |                               00
+      pressiondebouncing |                               01 |                               01
+       waitingdepression |                               10 |                               10
+    depressiondebouncing |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'debouncer'
+WARNING: [Synth 8-327] inferring latch for variable 'salidaMux_reg' [D:/Pogramas/practica5/practica5.srcs/sources_1/new/multiplexor.vhd:15]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                              000 |                              000
+                      s1 |                              001 |                              001
+                      s2 |                              010 |                              010
+                      s3 |                              011 |                              011
+                      s4 |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ESTADO_reg' using encoding 'sequential' in module 'tragaperras'
+WARNING: [Synth 8-327] inferring latch for variable 'entrada_reg' [D:/Pogramas/practica5/practica5.srcs/sources_1/new/tragaperras.vhd:93]
+WARNING: [Synth 8-327] inferring latch for variable 'enable_cont1_reg' [D:/Pogramas/practica5/practica5.srcs/sources_1/new/tragaperras.vhd:114]
+WARNING: [Synth 8-327] inferring latch for variable 'enable_cont05s_reg' [D:/Pogramas/practica5/practica5.srcs/sources_1/new/tragaperras.vhd:108]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 901.641 ; gain = 369.309
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 3     
++---Registers : 
+	               16 Bit    Registers := 3     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+Module multiplex 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+Module divisor 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module contador 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module tragaperras 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 3     
++---Muxes : 
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   5 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 6     
+Module displays 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3332] Sequential element (tragaperras_uc/mux/salidaMux_reg[15]) is unused and will be removed from module sintesis_tragaperras.
+WARNING: [Synth 8-3332] Sequential element (tragaperras_uc/mux/salidaMux_reg[14]) is unused and will be removed from module sintesis_tragaperras.
+WARNING: [Synth 8-3332] Sequential element (tragaperras_uc/mux/salidaMux_reg[13]) is unused and will be removed from module sintesis_tragaperras.
+WARNING: [Synth 8-3332] Sequential element (tragaperras_uc/mux/salidaMux_reg[12]) is unused and will be removed from module sintesis_tragaperras.
+WARNING: [Synth 8-3332] Sequential element (tragaperras_uc/mux/salidaMux_reg[11]) is unused and will be removed from module sintesis_tragaperras.
+WARNING: [Synth 8-3332] Sequential element (tragaperras_uc/mux/salidaMux_reg[10]) is unused and will be removed from module sintesis_tragaperras.
+WARNING: [Synth 8-3332] Sequential element (tragaperras_uc/mux/salidaMux_reg[9]) is unused and will be removed from module sintesis_tragaperras.
+WARNING: [Synth 8-3332] Sequential element (tragaperras_uc/mux/salidaMux_reg[8]) is unused and will be removed from module sintesis_tragaperras.
+WARNING: [Synth 8-3332] Sequential element (tragaperras_uc/mux/salidaMux_reg[7]) is unused and will be removed from module sintesis_tragaperras.
+WARNING: [Synth 8-3332] Sequential element (tragaperras_uc/mux/salidaMux_reg[6]) is unused and will be removed from module sintesis_tragaperras.
+WARNING: [Synth 8-3332] Sequential element (tragaperras_uc/mux/salidaMux_reg[5]) is unused and will be removed from module sintesis_tragaperras.
+WARNING: [Synth 8-3332] Sequential element (tragaperras_uc/mux/salidaMux_reg[4]) is unused and will be removed from module sintesis_tragaperras.
+WARNING: [Synth 8-3332] Sequential element (tragaperras_uc/mux/salidaMux_reg[3]) is unused and will be removed from module sintesis_tragaperras.
+WARNING: [Synth 8-3332] Sequential element (tragaperras_uc/mux/salidaMux_reg[2]) is unused and will be removed from module sintesis_tragaperras.
+WARNING: [Synth 8-3332] Sequential element (tragaperras_uc/mux/salidaMux_reg[1]) is unused and will be removed from module sintesis_tragaperras.
+WARNING: [Synth 8-3332] Sequential element (tragaperras_uc/mux/salidaMux_reg[0]) is unused and will be removed from module sintesis_tragaperras.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 901.641 ; gain = 369.309
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 901.641 ; gain = 369.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 902.879 ; gain = 370.547
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 902.879 ; gain = 370.547
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 910.281 ; gain = 377.949
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 910.281 ; gain = 377.949
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 910.281 ; gain = 377.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 910.281 ; gain = 377.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 910.281 ; gain = 377.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 910.281 ; gain = 377.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |memoria_bram  |         2|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------------+------+
+|      |Cell                |Count |
++------+--------------------+------+
+|1     |memoria_bram_bbox_1 |     1|
+|2     |memoria_bram_bbox_2 |     1|
+|3     |BUFG                |     2|
+|4     |CARRY4              |    36|
+|5     |LUT1                |    34|
+|6     |LUT2                |    95|
+|7     |LUT3                |    11|
+|8     |LUT4                |    78|
+|9     |LUT5                |    17|
+|10    |LUT6                |    31|
+|11    |FDCE                |   154|
+|12    |FDPE                |    44|
+|13    |FDRE                |    20|
+|14    |LD                  |     4|
+|15    |IBUF                |     9|
+|16    |OBUF                |    27|
++------+--------------------+------+
+
+Report Instance Areas: 
++------+-------------------+------------+------+
+|      |Instance           |Module      |Cells |
++------+-------------------+------------+------+
+|1     |top                |            |   570|
+|2     |  debouncer_fin    |debouncer   |    59|
+|3     |  debouncer_inicio |debouncer_0 |    60|
+|4     |  displays_inst    |displays    |    30|
+|5     |  tragaperras_uc   |tragaperras |   383|
+|6     |    mux            |multiplex   |    16|
+|7     |    contador1      |contador    |    13|
+|8     |    contador2      |contador_1  |     8|
+|9     |    contador3      |contador_2  |     9|
+|10    |    divider        |divisor     |   216|
++------+-------------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 910.281 ; gain = 377.949
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 910.281 ; gain = 251.902
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 910.281 ; gain = 377.949
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 917.703 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  LD => LDCE: 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+48 Infos, 27 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 917.703 ; gain = 618.883
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 917.703 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Pogramas/practica5/practica5.runs/synth_1/sintesis_tragaperras.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sintesis_tragaperras_utilization_synth.rpt -pb sintesis_tragaperras_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 29 01:08:24 2020...

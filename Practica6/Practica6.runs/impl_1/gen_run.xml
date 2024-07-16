@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1610905896">
+  <File Type="ROUTE-PWR" Name="MIPSMulticiclo_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="MIPSMulticiclo.tcl"/>
+  <File Type="BITSTR-BMM" Name="MIPSMulticiclo_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="MIPSMulticiclo_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="MIPSMulticiclo_reports.tcl"/>
+  <File Type="OPT-DCP" Name="MIPSMulticiclo_opt.dcp"/>
+  <File Type="OPT-DRC" Name="MIPSMulticiclo_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="MIPSMulticiclo.hwdef"/>
+  <File Type="PWROPT-DCP" Name="MIPSMulticiclo_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="MIPSMulticiclo_placed.dcp"/>
+  <File Type="PLACE-IO" Name="MIPSMulticiclo_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="MIPSMulticiclo_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="MIPSMulticiclo_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="MIPSMulticiclo_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="MIPSMulticiclo_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="MIPSMulticiclo.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="MIPSMulticiclo_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="MIPSMulticiclo.bin"/>
+  <File Type="PHYSOPT-DCP" Name="MIPSMulticiclo_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="MIPSMulticiclo.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="MIPSMulticiclo_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="MIPSMulticiclo_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="MIPSMulticiclo_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="MIPSMulticiclo_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="MIPSMulticiclo_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="MIPSMulticiclo_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="MIPSMulticiclo.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="MIPSMulticiclo_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="MIPSMulticiclo.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="MIPSMulticiclo_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="MIPSMulticiclo_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="MIPSMulticiclo.sysdef"/>
+  <File Type="ROUTE-PWR-RPX" Name="MIPSMulticiclo_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="MIPSMulticiclo_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="MIPSMulticiclo_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="MIPSMulticiclo_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="MIPSMulticiclo_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="MIPSMulticiclo_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="MIPSMulticiclo_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="MIPSMulticiclo_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="MIPSMulticiclo_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="MIPSMulticiclo_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="MIPSMulticiclo_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="MIPSMulticiclo_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="MIPSMulticiclo.bit"/>
+  <File Type="BITSTR-RBT" Name="MIPSMulticiclo.rbt"/>
+  <File Type="BITSTR-NKY" Name="MIPSMulticiclo.nky"/>
+  <File Type="BG-DRC" Name="MIPSMulticiclo.drc"/>
+  <File Type="RDI-RDI" Name="MIPSMulticiclo.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/ficheros/ALU.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/ficheros/bancoDeRegistros.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/ficheros/conv_7seg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/ficheros/debouncer.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/ficheros/displays.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/ficheros/memoria.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/ficheros/multiplexor2a1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/ficheros/multiplexor4a1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/ficheros/registro.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/ficheros/rutaDeDatos.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/ficheros/unidadDeControl.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/ficheros/MIPSMulticiclo.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/ficheros/BlockRam.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/ficheros/MultIterSum.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="MIPSMulticiclo"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/ficheros/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="DCM_100MHz_10MHz"/>
+  <BlockFileSet Type="BlockSrcs" Name="mem32x512"/>
+</GenRun>

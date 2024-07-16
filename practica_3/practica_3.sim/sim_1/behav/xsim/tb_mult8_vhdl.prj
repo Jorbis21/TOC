@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../practica_3.srcs/sources_1/new/Multiplicador.vhd" \
+"../../../../practica_3.srcs/sim_1/new/multiplicador_sim.vhd" \
+
+# Do not sort compile order
+nosort

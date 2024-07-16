@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Dec  1 18:30:11 2020
+# Process ID: 13296
+# Current directory: C:/Users/ignac/Desktop/UCM/2/TOC/TRAGAPERRAS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11760 C:\Users\ignac\Desktop\UCM\2\TOC\TRAGAPERRAS\PR3_Tragaperras.xpr
+# Log file: C:/Users/ignac/Desktop/UCM/2/TOC/TRAGAPERRAS/vivado.log
+# Journal file: C:/Users/ignac/Desktop/UCM/2/TOC/TRAGAPERRAS\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ignac/Desktop/UCM/2/TOC/TRAGAPERRAS/PR3_Tragaperras.xpr
+update_compile_order -fileset sources_1

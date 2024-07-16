@@ -1,0 +1,497 @@
+
+*** Running vivado
+    with args -log MIPSMulticiclo.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MIPSMulticiclo.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source MIPSMulticiclo.tcl -notrace
+Command: synth_design -top MIPSMulticiclo -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3252 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 712.449 ; gain = 178.023
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MIPSMulticiclo' [D:/Pogramas/Practica6/ficheros/MIPSMulticiclo.vhd:16]
+INFO: [Synth 8-3491] module 'DCM_100MHz_10MHz' declared at 'D:/Pogramas/Practica6/Practica6.runs/synth_1/.Xil/Vivado-20064-DESKTOP-UDMFM76/realtime/DCM_100MHz_10MHz_stub.vhdl:5' bound to instance 'reloj' of component 'DCM_100MHz_10MHz' [D:/Pogramas/Practica6/ficheros/MIPSMulticiclo.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'DCM_100MHz_10MHz' [D:/Pogramas/Practica6/Practica6.runs/synth_1/.Xil/Vivado-20064-DESKTOP-UDMFM76/realtime/DCM_100MHz_10MHz_stub.vhdl:13]
+	Parameter FREQ bound to: 10000 - type: integer 
+	Parameter BOUNCE bound to: 100 - type: integer 
+INFO: [Synth 8-3491] module 'debouncer' declared at 'D:/Pogramas/Practica6/ficheros/debouncer.vhd:5' bound to instance 'eliminadorRebotesModo' of component 'debouncer' [D:/Pogramas/Practica6/ficheros/MIPSMulticiclo.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [D:/Pogramas/Practica6/ficheros/debouncer.vhd:20]
+	Parameter FREQ bound to: 10000 - type: integer 
+	Parameter BOUNCE bound to: 100 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (1#1) [D:/Pogramas/Practica6/ficheros/debouncer.vhd:20]
+INFO: [Synth 8-3491] module 'unidadDeControl' declared at 'D:/Pogramas/Practica6/ficheros/unidadDeControl.vhd:4' bound to instance 'UC' of component 'unidadDeControl' [D:/Pogramas/Practica6/ficheros/MIPSMulticiclo.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'unidadDeControl' [D:/Pogramas/Practica6/ficheros/unidadDeControl.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'unidadDeControl' (2#1) [D:/Pogramas/Practica6/ficheros/unidadDeControl.vhd:16]
+INFO: [Synth 8-3491] module 'rutaDeDatos' declared at 'D:/Pogramas/Practica6/ficheros/rutaDeDatos.vhd:4' bound to instance 'RD' of component 'rutaDeDatos' [D:/Pogramas/Practica6/ficheros/MIPSMulticiclo.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'rutaDeDatos' [D:/Pogramas/Practica6/ficheros/rutaDeDatos.vhd:16]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'registro' declared at 'D:/Pogramas/Practica6/ficheros/registro.vhd:4' bound to instance 'reg_PC' of component 'registro' [D:/Pogramas/Practica6/ficheros/rutaDeDatos.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'registro' [D:/Pogramas/Practica6/ficheros/registro.vhd:17]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'registro' (3#1) [D:/Pogramas/Practica6/ficheros/registro.vhd:17]
+	Parameter bits_entradas bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'multiplexor2a1' declared at 'D:/Pogramas/Practica6/ficheros/multiplexor2a1.vhd:4' bound to instance 'mux_IorD' of component 'multiplexor2a1' [D:/Pogramas/Practica6/ficheros/rutaDeDatos.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'multiplexor2a1' [D:/Pogramas/Practica6/ficheros/multiplexor2a1.vhd:16]
+	Parameter bits_entradas bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'multiplexor2a1' (4#1) [D:/Pogramas/Practica6/ficheros/multiplexor2a1.vhd:16]
+INFO: [Synth 8-3491] module 'memoria' declared at 'D:/Pogramas/Practica6/ficheros/memoria.vhd:4' bound to instance 'mem' of component 'memoria' [D:/Pogramas/Practica6/ficheros/rutaDeDatos.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'memoria' [D:/Pogramas/Practica6/ficheros/memoria.vhd:15]
+INFO: [Synth 8-3491] module 'mem32x512' declared at 'D:/Pogramas/Practica6/Practica6.runs/synth_1/.Xil/Vivado-20064-DESKTOP-UDMFM76/realtime/mem32x512_stub.vhdl:5' bound to instance 'mem' of component 'mem32x512' [D:/Pogramas/Practica6/ficheros/memoria.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'mem32x512' [D:/Pogramas/Practica6/Practica6.runs/synth_1/.Xil/Vivado-20064-DESKTOP-UDMFM76/realtime/mem32x512_stub.vhdl:17]
+INFO: [Synth 8-256] done synthesizing module 'memoria' (5#1) [D:/Pogramas/Practica6/ficheros/memoria.vhd:15]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'registro' declared at 'D:/Pogramas/Practica6/ficheros/registro.vhd:4' bound to instance 'reg_IR' of component 'registro' [D:/Pogramas/Practica6/ficheros/rutaDeDatos.vhd:141]
+	Parameter bits_entradas bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'multiplexor2a1' declared at 'D:/Pogramas/Practica6/ficheros/multiplexor2a1.vhd:4' bound to instance 'mux_RW' of component 'multiplexor2a1' [D:/Pogramas/Practica6/ficheros/rutaDeDatos.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'multiplexor2a1__parameterized1' [D:/Pogramas/Practica6/ficheros/multiplexor2a1.vhd:16]
+	Parameter bits_entradas bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'multiplexor2a1__parameterized1' (5#1) [D:/Pogramas/Practica6/ficheros/multiplexor2a1.vhd:16]
+	Parameter bits_entradas bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'multiplexor2a1' declared at 'D:/Pogramas/Practica6/ficheros/multiplexor2a1.vhd:4' bound to instance 'mux_MDR' of component 'multiplexor2a1' [D:/Pogramas/Practica6/ficheros/rutaDeDatos.vhd:145]
+INFO: [Synth 8-3491] module 'bancoDeRegistros' declared at 'D:/Pogramas/Practica6/ficheros/bancoDeRegistros.vhd:5' bound to instance 'banco_registros' of component 'bancoDeRegistros' [D:/Pogramas/Practica6/ficheros/rutaDeDatos.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'bancoDeRegistros' [D:/Pogramas/Practica6/ficheros/bancoDeRegistros.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'bancoDeRegistros' (6#1) [D:/Pogramas/Practica6/ficheros/bancoDeRegistros.vhd:20]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'registro' declared at 'D:/Pogramas/Practica6/ficheros/registro.vhd:4' bound to instance 'reg_A' of component 'registro' [D:/Pogramas/Practica6/ficheros/rutaDeDatos.vhd:156]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'registro' declared at 'D:/Pogramas/Practica6/ficheros/registro.vhd:4' bound to instance 'reg_B' of component 'registro' [D:/Pogramas/Practica6/ficheros/rutaDeDatos.vhd:158]
+	Parameter bits_entradas bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'multiplexor2a1' declared at 'D:/Pogramas/Practica6/ficheros/multiplexor2a1.vhd:4' bound to instance 'mux_opA' of component 'multiplexor2a1' [D:/Pogramas/Practica6/ficheros/rutaDeDatos.vhd:160]
+	Parameter bits_entradas bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'multiplexor4a1' declared at 'D:/Pogramas/Practica6/ficheros/multiplexor4a1.vhd:4' bound to instance 'mux_opB' of component 'multiplexor4a1' [D:/Pogramas/Practica6/ficheros/rutaDeDatos.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'multiplexor4a1' [D:/Pogramas/Practica6/ficheros/multiplexor4a1.vhd:18]
+	Parameter bits_entradas bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'multiplexor4a1' (7#1) [D:/Pogramas/Practica6/ficheros/multiplexor4a1.vhd:18]
+INFO: [Synth 8-3491] module 'ALU' declared at 'D:/Pogramas/Practica6/ficheros/ALU.vhd:5' bound to instance 'ALU_i' of component 'ALU' [D:/Pogramas/Practica6/ficheros/rutaDeDatos.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'ALU' [D:/Pogramas/Practica6/ficheros/ALU.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (8#1) [D:/Pogramas/Practica6/ficheros/ALU.vhd:16]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'registro' declared at 'D:/Pogramas/Practica6/ficheros/registro.vhd:4' bound to instance 'reg_ALUout' of component 'registro' [D:/Pogramas/Practica6/ficheros/rutaDeDatos.vhd:166]
+INFO: [Synth 8-256] done synthesizing module 'rutaDeDatos' (9#1) [D:/Pogramas/Practica6/ficheros/rutaDeDatos.vhd:16]
+INFO: [Synth 8-3491] module 'displays' declared at 'D:/Pogramas/Practica6/ficheros/displays.vhd:7' bound to instance 'displays_i' of component 'displays' [D:/Pogramas/Practica6/ficheros/MIPSMulticiclo.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'displays' [D:/Pogramas/Practica6/ficheros/displays.vhd:20]
+INFO: [Synth 8-3491] module 'conv_7seg' declared at 'D:/Pogramas/Practica6/ficheros/conv_7seg.vhd:4' bound to instance 'conv_7seg_digito_0' of component 'conv_7seg' [D:/Pogramas/Practica6/ficheros/displays.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'conv_7seg' [D:/Pogramas/Practica6/ficheros/conv_7seg.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'conv_7seg' (10#1) [D:/Pogramas/Practica6/ficheros/conv_7seg.vhd:9]
+INFO: [Synth 8-3491] module 'conv_7seg' declared at 'D:/Pogramas/Practica6/ficheros/conv_7seg.vhd:4' bound to instance 'conv_7seg_digito_1' of component 'conv_7seg' [D:/Pogramas/Practica6/ficheros/displays.vhd:37]
+INFO: [Synth 8-3491] module 'conv_7seg' declared at 'D:/Pogramas/Practica6/ficheros/conv_7seg.vhd:4' bound to instance 'conv_7seg_digito_2' of component 'conv_7seg' [D:/Pogramas/Practica6/ficheros/displays.vhd:38]
+INFO: [Synth 8-3491] module 'conv_7seg' declared at 'D:/Pogramas/Practica6/ficheros/conv_7seg.vhd:4' bound to instance 'conv_7seg_digito_3' of component 'conv_7seg' [D:/Pogramas/Practica6/ficheros/displays.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'displays' (11#1) [D:/Pogramas/Practica6/ficheros/displays.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'MIPSMulticiclo' (12#1) [D:/Pogramas/Practica6/ficheros/MIPSMulticiclo.vhd:16]
+WARNING: [Synth 8-3331] design memoria has unconnected port ADDR[31]
+WARNING: [Synth 8-3331] design memoria has unconnected port ADDR[30]
+WARNING: [Synth 8-3331] design memoria has unconnected port ADDR[29]
+WARNING: [Synth 8-3331] design memoria has unconnected port ADDR[28]
+WARNING: [Synth 8-3331] design memoria has unconnected port ADDR[27]
+WARNING: [Synth 8-3331] design memoria has unconnected port ADDR[26]
+WARNING: [Synth 8-3331] design memoria has unconnected port ADDR[25]
+WARNING: [Synth 8-3331] design memoria has unconnected port ADDR[24]
+WARNING: [Synth 8-3331] design memoria has unconnected port ADDR[23]
+WARNING: [Synth 8-3331] design memoria has unconnected port ADDR[22]
+WARNING: [Synth 8-3331] design memoria has unconnected port ADDR[21]
+WARNING: [Synth 8-3331] design memoria has unconnected port ADDR[20]
+WARNING: [Synth 8-3331] design memoria has unconnected port ADDR[19]
+WARNING: [Synth 8-3331] design memoria has unconnected port ADDR[18]
+WARNING: [Synth 8-3331] design memoria has unconnected port ADDR[17]
+WARNING: [Synth 8-3331] design memoria has unconnected port ADDR[16]
+WARNING: [Synth 8-3331] design memoria has unconnected port ADDR[15]
+WARNING: [Synth 8-3331] design memoria has unconnected port ADDR[14]
+WARNING: [Synth 8-3331] design memoria has unconnected port ADDR[13]
+WARNING: [Synth 8-3331] design memoria has unconnected port ADDR[12]
+WARNING: [Synth 8-3331] design memoria has unconnected port ADDR[11]
+WARNING: [Synth 8-3331] design memoria has unconnected port ADDR[1]
+WARNING: [Synth 8-3331] design memoria has unconnected port ADDR[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 779.930 ; gain = 245.504
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 779.930 ; gain = 245.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 779.930 ; gain = 245.504
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Pogramas/Practica6/Practica6.srcs/sources_1/ip/DCM_100MHz_10MHz/DCM_100MHz_10MHz/DCM_100MHz_10MHz_in_context.xdc] for cell 'reloj'
+Finished Parsing XDC File [d:/Pogramas/Practica6/Practica6.srcs/sources_1/ip/DCM_100MHz_10MHz/DCM_100MHz_10MHz/DCM_100MHz_10MHz_in_context.xdc] for cell 'reloj'
+Parsing XDC File [d:/Pogramas/Practica6/Practica6.srcs/sources_1/ip/mem32x512/mem32x512/mem32x512_in_context.xdc] for cell 'RD/mem/mem'
+Finished Parsing XDC File [d:/Pogramas/Practica6/Practica6.srcs/sources_1/ip/mem32x512/mem32x512/mem32x512_in_context.xdc] for cell 'RD/mem/mem'
+Parsing XDC File [D:/Pogramas/Practica6/ficheros/Basys3_Master.xdc]
+Finished Parsing XDC File [D:/Pogramas/Practica6/ficheros/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Pogramas/Practica6/ficheros/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MIPSMulticiclo_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MIPSMulticiclo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 911.480 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 911.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 911.480 ; gain = 377.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 911.480 ; gain = 377.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  d:/Pogramas/Practica6/Practica6.srcs/sources_1/ip/DCM_100MHz_10MHz/DCM_100MHz_10MHz/DCM_100MHz_10MHz_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  d:/Pogramas/Practica6/Practica6.srcs/sources_1/ip/DCM_100MHz_10MHz/DCM_100MHz_10MHz/DCM_100MHz_10MHz_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for reloj. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for RD/mem/mem. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 911.480 ; gain = 377.055
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'debouncer'
+INFO: [Synth 8-802] inferred FSM for state register 'currentState_reg' in module 'unidadDeControl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         waitingpression |                               00 |                               00
+      pressiondebouncing |                               01 |                               01
+       waitingdepression |                               10 |                               10
+    depressiondebouncing |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'debouncer'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                     000000000001 |                             0000
+                      s1 |                     000000000010 |                             0001
+                      s2 |                     000000000100 |                             0010
+                      s8 |                     000000001000 |                             1000
+                      s9 |                     000000010000 |                             1001
+                      s3 |                     000000100000 |                             0011
+                      s4 |                     000001000000 |                             0100
+                      s5 |                     000010000000 |                             0101
+                      s6 |                     000100000000 |                             0110
+                      s7 |                     001000000000 |                             0111
+                     s10 |                     010000000000 |                             1010
+                     s11 |                     100000000000 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'currentState_reg' using encoding 'one-hot' in module 'unidadDeControl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 911.480 ; gain = 377.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 37    
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   4 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 1     
+	  12 Input     16 Bit        Muxes := 1     
+	  12 Input     12 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 33    
+	   4 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+Module unidadDeControl 
+Detailed RTL Component Info : 
++---Muxes : 
+	  12 Input     16 Bit        Muxes := 1     
+	  12 Input     12 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 1     
+Module registro 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module multiplexor2a1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module multiplexor2a1__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module bancoDeRegistros 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module multiplexor4a1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+Module displays 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "UC/" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 911.480 ; gain = 377.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'reloj/clk_out1' to pin 'reloj/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 911.480 ; gain = 377.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1033.883 ; gain = 499.457
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1034.930 ; gain = 500.504
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1034.930 ; gain = 500.504
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1034.930 ; gain = 500.504
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1034.930 ; gain = 500.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1034.930 ; gain = 500.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1034.930 ; gain = 500.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1034.930 ; gain = 500.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |DCM_100MHz_10MHz |         1|
+|2     |mem32x512        |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+------------------------+------+
+|      |Cell                    |Count |
++------+------------------------+------+
+|1     |DCM_100MHz_10MHz_bbox_0 |     1|
+|2     |mem32x512_bbox_1        |     1|
+|3     |CARRY4                  |    27|
+|4     |LUT1                    |     1|
+|5     |LUT2                    |    10|
+|6     |LUT3                    |    90|
+|7     |LUT4                    |    47|
+|8     |LUT5                    |    61|
+|9     |LUT6                    |   819|
+|10    |MUXF7                   |   288|
+|11    |FDCE                    |  1222|
+|12    |FDPE                    |     3|
+|13    |FDRE                    |    20|
+|14    |IBUF                    |     3|
+|15    |OBUF                    |    11|
++------+------------------------+------+
+
+Report Instance Areas: 
++------+------------------------+-----------------+------+
+|      |Instance                |Module           |Cells |
++------+------------------------+-----------------+------+
+|1     |top                     |                 |  2635|
+|2     |  RD                    |rutaDeDatos      |  2428|
+|3     |    ALU_i               |ALU              |   112|
+|4     |    banco_registros     |bancoDeRegistros |  1871|
+|5     |    mem                 |memoria          |    64|
+|6     |    reg_A               |registro         |    38|
+|7     |    reg_ALUout          |registro_0       |    32|
+|8     |    reg_B               |registro_1       |    43|
+|9     |    reg_IR              |registro_2       |   205|
+|10    |    reg_PC              |registro_3       |    63|
+|11    |  UC                    |unidadDeControl  |    90|
+|12    |  displays_i            |displays         |    31|
+|13    |  eliminadorRebotesModo |debouncer        |    71|
++------+------------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1034.930 ; gain = 500.504
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 1034.930 ; gain = 368.953
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1034.930 ; gain = 500.504
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 315 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1034.930 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+71 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1034.930 ; gain = 736.016
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1034.930 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Pogramas/Practica6/Practica6.runs/synth_1/MIPSMulticiclo.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MIPSMulticiclo_utilization_synth.rpt -pb MIPSMulticiclo_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 17 18:51:01 2021...

@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../practica5.srcs/sources_1/new/contador10.vhd" \
+"../../../../practica5.srcs/sources_1/imports/recursos/conv_7seg.vhd" \
+"../../../../practica5.srcs/sources_1/imports/recursos/debouncer.vhd" \
+"../../../../practica5.srcs/sources_1/imports/recursos/displays.vhd" \
+"../../../../practica5.srcs/sources_1/imports/recursos/divisor.vhd" \
+"../../../../practica5.srcs/sources_1/new/multiplexor.vhd" \
+"../../../../practica5.srcs/sources_1/new/tragaperras.vhd" \
+"../../../../practica5.srcs/sources_1/imports/recursos/sintesis_tragaperras.vhd" \
+
+# Do not sort compile order
+nosort

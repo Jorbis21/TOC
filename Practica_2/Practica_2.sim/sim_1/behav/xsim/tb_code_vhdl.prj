@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Practica_2.srcs/sources_1/new/code.vhd" \
+"../../../../Practica_2.srcs/sources_1/new/conv_7seg1.vhd" \
+"../../../../Practica_2.srcs/sources_1/new/debouncer.vhd" \
+"../../../../Practica_2.srcs/sources_1/new/cont_mod4.vhd" \
+"../../../../Practica_2.srcs/sources_1/new/decoder.vhd" \
+"../../../../Practica_2.srcs/sim_1/new/tb_code.vhd" \
+
+# Do not sort compile order
+nosort

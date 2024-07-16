@@ -1,0 +1,15 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/Pogramas/practica5/practica5.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/Pogramas/practica5/practica5.srcs/sim_1/imports/sim_1/tb.vhd,1608135582,vhdl,,,,tb1,,,,,,,,
+D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/conv_7seg.vhd,1605516136,vhdl,,,,conv_7seg,,,,,,,,
+D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/debouncer.vhd,1605516138,vhdl,,,,debouncer,,,,,,,,
+D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/displays.vhd,1605516138,vhdl,,,,displays,,,,,,,,
+D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/divisor.vhd,1608135127,vhdl,,,,divisor,,,,,,,,
+D:/Pogramas/practica5/practica5.srcs/sources_1/imports/recursos/sintesis_tragaperras.vhd,1608134914,vhdl,,,,sintesis_tragaperras,,,,,,,,
+D:/Pogramas/practica5/practica5.srcs/sources_1/ip/memoria_bram/sim/memoria_bram.v,1608133672,verilog,,,,memoria_bram,,,,,,,,
+D:/Pogramas/practica5/practica5.srcs/sources_1/new/contador10.vhd,1608135736,vhdl,,,,contador,,,,,,,,
+D:/Pogramas/practica5/practica5.srcs/sources_1/new/multiplexor.vhd,1608048837,vhdl,,,,multiplex,,,,,,,,
+D:/Pogramas/practica5/practica5.srcs/sources_1/new/tragaperras.vhd,1608133924,vhdl,,,,tragaperras,,,,,,,,

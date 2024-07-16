@@ -1,0 +1,147 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Tue Nov 24 22:25:27 2020
+| Host         : DESKTOP-UDMFM76 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file Mult_adders_methodology_drc_routed.rpt -pb Mult_adders_methodology_drc_routed.pb -rpx Mult_adders_methodology_drc_routed.rpx
+| Design       : Mult_adders
+| Device       : xc7k70tfbv676-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 16
++--------+----------+------------------------------------------+------------+
+| Rule   | Severity | Description                              | Violations |
++--------+----------+------------------------------------------+------------+
+| XDCH-2 | Warning  | Same min and max delay values on IO port | 16         |
++--------+----------+------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'X[0]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks sys_clk_pin] -max -add_delay 0.000 [get_ports {X[0]}]
+D:/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc (Line: 12)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'X[1]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks sys_clk_pin] -max -add_delay 0.000 [get_ports {X[1]}]
+D:/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc (Line: 15)
+Related violations: <none>
+
+XDCH-2#3 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'X[2]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks sys_clk_pin] -max -add_delay 0.000 [get_ports {X[2]}]
+D:/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc (Line: 18)
+Related violations: <none>
+
+XDCH-2#4 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'X[3]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks sys_clk_pin] -max -add_delay 0.000 [get_ports {X[3]}]
+D:/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc (Line: 21)
+Related violations: <none>
+
+XDCH-2#5 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'Y[0]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks sys_clk_pin] -max -add_delay 0.000 [get_ports {Y[0]}]
+D:/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc (Line: 23)
+Related violations: <none>
+
+XDCH-2#6 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'Y[1]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks sys_clk_pin] -max -add_delay 0.000 [get_ports {Y[1]}]
+D:/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc (Line: 26)
+Related violations: <none>
+
+XDCH-2#7 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'Y[2]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks sys_clk_pin] -max -add_delay 0.000 [get_ports {Y[2]}]
+D:/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc (Line: 29)
+Related violations: <none>
+
+XDCH-2#8 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'Y[3]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks sys_clk_pin] -max -add_delay 0.000 [get_ports {Y[3]}]
+D:/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc (Line: 32)
+Related violations: <none>
+
+XDCH-2#9 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'Z[0]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -max -add_delay 0.000 [get_ports {Z[0]}]
+D:/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc (Line: 36)
+Related violations: <none>
+
+XDCH-2#10 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'Z[1]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -max -add_delay 0.000 [get_ports {Z[1]}]
+D:/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc (Line: 39)
+Related violations: <none>
+
+XDCH-2#11 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'Z[2]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -max -add_delay 0.000 [get_ports {Z[2]}]
+D:/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc (Line: 42)
+Related violations: <none>
+
+XDCH-2#12 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'Z[3]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -max -add_delay 0.000 [get_ports {Z[3]}]
+D:/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc (Line: 45)
+Related violations: <none>
+
+XDCH-2#13 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'Z[4]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -max -add_delay 0.000 [get_ports {Z[4]}]
+D:/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc (Line: 48)
+Related violations: <none>
+
+XDCH-2#14 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'Z[5]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -max -add_delay 0.000 [get_ports {Z[5]}]
+D:/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc (Line: 51)
+Related violations: <none>
+
+XDCH-2#15 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'Z[6]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -max -add_delay 0.000 [get_ports {Z[6]}]
+D:/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc (Line: 54)
+Related violations: <none>
+
+XDCH-2#16 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'Z[7]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -max -add_delay 0.000 [get_ports {Z[7]}]
+D:/Pogramas/practica_3/practica_3.srcs/constrs_1/imports/Practica_2/Basys3_Master.xdc (Line: 57)
+Related violations: <none>
+
+

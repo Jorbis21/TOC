@@ -1,0 +1,338 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Dec  2 09:17:59 2020
+# Process ID: 10568
+# Current directory: C:/hlocal/TRAGAPERRAS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7400 C:\hlocal\TRAGAPERRAS\PR3_Tragaperras.xpr
+# Log file: C:/hlocal/TRAGAPERRAS/vivado.log
+# Journal file: C:/hlocal/TRAGAPERRAS\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.xpr
+INFO: [Project 1-313] Project file moved from 'D:/UNIVERSIDAD 2 CURSO/TOC/TRAGAPERRAS' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/software/electronica/xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 798.254 ; gain = 186.195
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  2 09:19:57 2020] Launched synth_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/synth_1/runme.log
+[Wed Dec  2 09:19:57 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 846.312 ; gain = 15.305
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AB3EE0A
+set_property PROGRAM.FILE {C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/sintesis_tragaperras.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/sintesis_tragaperras.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AB3EE0A
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  2 09:28:10 2020] Launched synth_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/synth_1/runme.log
+[Wed Dec  2 09:28:11 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183AB3EE0A" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AB3EE0A
+set_property PROGRAM.FILE {C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/sintesis_tragaperras.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/sintesis_tragaperras.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/sintesis_tragaperras.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  2 09:35:06 2020] Launched synth_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/synth_1/runme.log
+[Wed Dec  2 09:35:06 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  2 09:36:53 2020] Launched synth_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/synth_1/runme.log
+[Wed Dec  2 09:36:53 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/sintesis_tragaperras.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  2 09:40:38 2020] Launched synth_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/synth_1/runme.log
+[Wed Dec  2 09:40:38 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 2942.234 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 2942.234 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2942.234 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 3093.785 ; gain = 1055.867
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/sintesis_tragaperras.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  2 09:51:28 2020] Launched synth_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/synth_1/runme.log
+[Wed Dec  2 09:51:28 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/sintesis_tragaperras.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  2 10:01:15 2020] Launched synth_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/synth_1/runme.log
+[Wed Dec  2 10:01:15 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/sintesis_tragaperras.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  2 10:05:01 2020] Launched synth_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/synth_1/runme.log
+[Wed Dec  2 10:05:01 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  2 10:10:34 2020] Launched synth_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/synth_1/runme.log
+[Wed Dec  2 10:10:34 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  2 10:13:12 2020] Launched synth_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/synth_1/runme.log
+[Wed Dec  2 10:13:12 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  2 10:14:51 2020] Launched synth_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/synth_1/runme.log
+[Wed Dec  2 10:14:51 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  2 10:16:03 2020] Launched synth_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/synth_1/runme.log
+[Wed Dec  2 10:16:03 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  2 10:17:31 2020] Launched synth_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/synth_1/runme.log
+[Wed Dec  2 10:17:31 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+[Wed Dec  2 10:21:42 2020] Launched synth_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/synth_1/runme.log
+[Wed Dec  2 10:21:42 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  2 10:23:08 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/sintesis_tragaperras.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+[Wed Dec  2 10:24:31 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  2 10:26:03 2020] Launched synth_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/synth_1/runme.log
+[Wed Dec  2 10:26:03 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+reset_run synth_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  2 10:29:25 2020] Launched synth_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/synth_1/runme.log
+[Wed Dec  2 10:29:25 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/sintesis_tragaperras.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  2 10:32:43 2020] Launched synth_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/synth_1/runme.log
+[Wed Dec  2 10:32:43 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  2 10:33:39 2020] Launched synth_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/synth_1/runme.log
+[Wed Dec  2 10:33:39 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  2 10:34:10 2020] Launched synth_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/synth_1/runme.log
+[Wed Dec  2 10:34:10 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/sintesis_tragaperras.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  2 10:38:35 2020] Launched synth_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/synth_1/runme.log
+[Wed Dec  2 10:38:35 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  2 10:39:51 2020] Launched synth_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/synth_1/runme.log
+[Wed Dec  2 10:39:51 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  2 10:42:52 2020] Launched synth_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/synth_1/runme.log
+[Wed Dec  2 10:42:52 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/sintesis_tragaperras.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  2 10:46:23 2020] Launched synth_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/synth_1/runme.log
+[Wed Dec  2 10:46:23 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/sintesis_tragaperras.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  2 10:49:48 2020] Launched synth_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/synth_1/runme.log
+[Wed Dec  2 10:49:48 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/sintesis_tragaperras.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  2 10:52:36 2020] Launched synth_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/synth_1/runme.log
+[Wed Dec  2 10:52:36 2020] Launched impl_1...
+Run output will be captured here: C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/hlocal/TRAGAPERRAS/PR3_Tragaperras.runs/impl_1/sintesis_tragaperras.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  2 10:54:49 2020...
